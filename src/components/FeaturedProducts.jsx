@@ -2,6 +2,7 @@ import { useState } from "react";
 import ProductCard from "./ProductCard";
 import products from "../data/products";
 import SearchBar from "./SearchBar";
+import ProductGrid from "./ProductGrid";
 import "./FeaturedProducts.css";
 
 function FeaturedProducts() {
@@ -17,20 +18,12 @@ function FeaturedProducts() {
             <div className="products-grid">
                 {
                     filteredProducts.length > 0 ?
-                        filteredProducts.map(product => (
-                            <ProductCard
-                                key={product.id}
-                                name={product.name}
-                                city={product.city}
-                                price={product.price}
-                                rating={product.rating}
-                                image={product.image} />
-                        )) :
+                        <ProductGrid products={filteredProducts} />
+                        :
                         <div className="no-products">
                             <h3>No products found 😕</h3>
                             <p>Try searching for another textile.</p>
                         </div>
-
                 }
             </div>
         </section>
