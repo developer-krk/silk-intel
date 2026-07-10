@@ -1,4 +1,4 @@
-
+import "./SearchBar.css"
     function SearchBar({search,setSearch}) {
         console.log(search);
         return (

@@ -15,17 +15,15 @@ function FeaturedProducts() {
         <section className="featured-products">
             <h2>Featured Products</h2>
             <SearchBar search={search} setSearch={setSearch} />
-            <div className="products-grid">
-                {
-                    filteredProducts.length > 0 ?
-                        <ProductGrid products={filteredProducts} />
-                        :
-                        <div className="no-products">
-                            <h3>No products found 😕</h3>
-                            <p>Try searching for another textile.</p>
-                        </div>
-                }
-            </div>
+            {
+                filteredProducts.length > 0 ?
+                    <ProductGrid products={filteredProducts} />
+                    :
+                    <div className="no-products">
+                        <h3>No products found 😕</h3>
+                        <p>Try searching for another textile.</p>
+                    </div>
+            }
         </section>
     );
 }
