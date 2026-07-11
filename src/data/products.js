@@ -1,3 +1,5 @@
+import banarasiSilk from "../assets/banarasiSilk.webp";
+
 const products = [
     {
         id: 1,
@@ -15,7 +17,7 @@ const products = [
         description:
             "Premium handcrafted Banarasi silk fabric ideal for bridal wear, sarees and luxury garments.",
 
-        image: "",
+        image: banarasiSilk,
 
         priceHistory: [
             { month: "Jan", price: 390 },
@@ -58,7 +60,7 @@ const products = [
         description:
             "Soft breathable cotton fabric suitable for shirts, kurtas and casual wear.",
 
-        image: "",
+        image: "https://img.magnific.com/free-photo/cream-linen-fabric_23-2151932234.jpg?semt=ais_hybrid&w=740&q=80",
 
         priceHistory: [
             { month: "Jan", price: 170 },
@@ -101,7 +103,7 @@ const products = [
         description:
             "Premium linen blend offering comfort with wrinkle resistance.",
 
-        image: "",
+        image: "https://static.fibre2fashion.com/MemberResources/LeadResources/8/2020/7/Seller/20182301/Images/20182301_0_cotton-linen.jpg",
 
         priceHistory: [
             { month: "Jan", price: 295 },
@@ -186,7 +188,7 @@ const products = [
         description:
             "Authentic Kanchipuram silk known for its durability and rich weaving.",
 
-        image: "",
+        image: "https://kantagiri.com/cdn/shop/files/photo_2024-08-03_20-41-10_2000x2000_crop_top.jpg?v=1722705079",
 
         priceHistory: [
             { month: "Jan", price: 520 },
@@ -229,7 +231,7 @@ const products = [
         description:
             "Eco-friendly organic cotton with premium softness.",
 
-        image: "",
+        image: "https://images.squarespace-cdn.com/content/v1/5981c7129f7456741cde6662/1508506929759-TZVHTB5CRG3BFXBP26UE/GUJOC-T25-B-handwoven-organic-cotton-fabric-bleached.jpg?format=1500w",
 
         priceHistory: [
             { month: "Jan", price: 245 },
@@ -272,7 +274,7 @@ const products = [
         description:
             "High-quality breathable pure linen fabric.",
 
-        image: "",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLfG0mX1oGznc8Xx25UTdpxMRFj094uy5KhSg304snbDu0PUR0AfqUUIk5&s=10",
 
         priceHistory: [
             { month: "Jan", price: 365 },
