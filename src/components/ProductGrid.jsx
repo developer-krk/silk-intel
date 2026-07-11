@@ -1,4 +1,5 @@
 import ProductCard from "./ProductCard";
+import "./ProductGrid.css";
 function ProductGrid({products}) {
     return (
         <div className="products-grid">

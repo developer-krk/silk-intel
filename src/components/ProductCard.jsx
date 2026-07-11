@@ -4,11 +4,11 @@ function ProductCard({id, name, price, city, rating, image }) {
     return (
         <div className="product-card">
 
-            <div className="product-image">
+            <div className="card-image">
                 {image ? (
                     <img src={image} alt={name} />
                 ) : (
-                    <div className="image-placeholder">
+                    <div className="card-placeholder">
                         No Image
                     </div>
                 )}
