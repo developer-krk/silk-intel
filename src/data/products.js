@@ -1,4 +1,4 @@
-import banarasiSilk from "../assets/banarasiSilk.webp";
+// import banarasiSilk from "../assets/banarasiSilk.webp";
 
 const products = [
     {
@@ -17,7 +17,7 @@ const products = [
         description:
             "Premium handcrafted Banarasi silk fabric ideal for bridal wear, sarees and luxury garments.",
 
-        image: banarasiSilk,
+        image: "",
 
         priceHistory: [
             { month: "Jan", price: 390 },

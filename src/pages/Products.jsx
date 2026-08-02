@@ -1,10 +1,24 @@
 import SearchBar from "../components/SearchBar";
 import ProductGrid from "../components/ProductGrid";
-import { useState } from "react";
-import products from "../data/products";
+import { useEffect, useState } from "react";
+//import products from "../data/products";
 import CategoryFilter from "../components/CategoryFilter";
 
 function Products() {
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
+        async function fetchProducts() {
+            try {
+                const response = await fetch("http://localhost:5000/api/products");
+                const data = await response.json();
+                setProducts(data);
+            }
+            catch (error) {
+                console.log(error);
+            }
+        }
+        fetchProducts();
+    }, [])
     const [search, setSearch] = useState("");
     const [selectedCategory, setCategory] = useState("All");
     const filteredProducts = products.filter((product) => {
