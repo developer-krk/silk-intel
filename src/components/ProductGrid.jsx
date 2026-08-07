@@ -5,8 +5,8 @@ function ProductGrid({products}) {
         <div className="products-grid">
             {
                 products.map((product) => <ProductCard
-                    key={product.id}
-                    id ={product.id}
+                    key={product._id}
+                    id ={product._id}
                     name={product.name}
                     city={product.city}
                     price={product.price}
