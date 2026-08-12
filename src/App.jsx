@@ -6,6 +6,7 @@ import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import { useParams } from "react-router-dom";
 import ProductDetails from "./pages/ProductDetails";
+import AdminProducts from "./pages/AdminProducts";
 function App() {
     return (
         <div>
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/products/:id" element={<ProductDetails/>}/>
                 <Route path="/login" element={<Login />} />
                 <Route path="*" element={<NotFound />} />
+                <Route path="/admin/products" element={<AdminProducts/>}/>
             </Routes>
         </div>
     );
