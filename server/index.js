@@ -3,11 +3,16 @@ import cors from "cors";
 import express from "express";
 import connectDB from "./config/db.js";
 import productRouter from "./routes/productRoutes.js";  
+import authRoutes from "./routes/authRoutes.js";
+import dotenv from "dotenv";
+
+dotenv.config();
 const app = express();
 // connectDB();
 app.use(express.json());
 app.use(cors());
 app.use("/api/products",productRouter);
+app.use("/api/auth",authRoutes);
 app.get("/", (req, res) => {
     res.send("SilkIntel Backend Running 🚀");
 });
